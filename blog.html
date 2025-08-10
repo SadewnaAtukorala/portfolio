@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadewna Atukorala | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+        .blog-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 20px;
+        }
+
+        .blog-card {
+            background-color: #adceeb;
+            border-radius: 20px;
+            max-width:80%;
+            width: 100%;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .blog-card h2 {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .blog-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: left;
+        }
+
+        .read-more-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .read-more-button:hover {
+            background-color: #7faef5;
+            color: black;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 15px;
+            background-color: #141463;
+            text-align: center;
+        }
+
+        @media screen and (max-width:1024px) {
+
+            .blog-container{
+                margin-top: 10%;
+                max-width: 100%;
+            }
+        }
+
+         @media screen and (max-width:450px) {
+
+            .blog-container{
+                margin-top: 30%;
+                max-width: 100%;
+            }
+            
+            .blog-card h2 {
+                font-size:larger;
+            }
+        }
+
+         @media screen and (max-width:320px) {
+
+            .blog-container{
+                margin-top: 30%;
+                max-width: 2500px;
+            }
+
+            .blog-card h2 {
+                font-size:larger;
+            }
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="home.html">Sadewna</a></div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="blog-container">
+        <div class="blog-card">
+            <h2>From Static to Dynamic: How Multimedia Has Transformed Web Design</h2>
+            <p>
+                Discover how the web evolved from plain, 
+                text-heavy pages into visually rich and interactive experiences. 
+                This article explores the role of images, videos, audio, and animations in modern web design - 
+                highlighting how each element boosts user engagement and storytelling.
+            </p>
+            <a class="read-more-button" href="https://medium.com/@asadewna/from-static-to-dynamic-how-multimedia-has-transformed-web-design-a639ba832b83" target="_blank">
+                Read More on Medium
+            </a>
+        </div>
+    </div>
+
+    <script defer src="script.js"></script>
+
+</body>
+<footer>
+    <p>© 2025 Sadewna Atukorala</p>
+</footer>
+
+</html>
