@@ -253,9 +253,10 @@ h2 {
 }
 
 .project-card img {
-  width: 100%;
+  width:fit-content;
   height: 180px;
   object-fit: cover;
+  margin-left: 5px;
 }
 
 .project-info {
