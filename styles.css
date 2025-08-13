@@ -226,9 +226,10 @@ h2 {
 }
 
 .projects-section {
-    display: block; 
-    text-align: left; 
-    align-items: left;
+    display: flex;
+    align-items: center; /* ✅ vertical center */
+    justify-content: flex-start;
+    gap:25%
 }
 
 .projects-section .projects-grid {
