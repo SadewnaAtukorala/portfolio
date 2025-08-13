@@ -52,3 +52,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     wrapper.innerHTML = "<h2>Thank you!</h2><p class='form-message'>Your message has been submitted.</p>";
   });
+
