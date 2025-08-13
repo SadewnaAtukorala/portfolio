@@ -297,6 +297,15 @@ footer {
   margin-top: 2rem;
 }
 
+footer a {
+  color: #ffffff;
+  margin-left: 8px;
+}
+
+footer a:hover {
+  color: #0a66c2; /* LinkedIn blue */
+}
+
 .hidden {
   opacity: 0;
   transform: translateY(20px);
