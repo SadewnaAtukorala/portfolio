@@ -227,10 +227,11 @@ h2 {
 
 .projects-section {
     display: flex;
-    align-items: center; /* ✅ vertical center */
+    align-items: center; 
     justify-content: flex-start;
-    gap:25%
+    gap:15%;
 }
+
 
 .projects-section .projects-grid {
     display: flex;
@@ -248,17 +249,15 @@ h2 {
   background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
-  width:400px;
+  width:100%;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card img {
-  width:fit-content;
-  height: 180px;
+  width:100%;
+  height: auto;
   object-fit: cover;
-  padding-right: 5px;
-  padding-left: 10px;
   align-items:center
 }
 
@@ -448,12 +447,15 @@ section {
   }
 
   .project-card {
-    width: 90%;
+    width: 100%;
   }
 
   .project-card img {
-  height: 180px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 }
+
+
 
