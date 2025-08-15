@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.getElementById("menu-toggle");
+  const toggle = document.getElementById("hamburger-toggle");
   const nav = document.getElementById("nav-links");
 
   toggle.addEventListener("click", () => {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        entry.target.classList.add('appear');
       }
     });
   }, {
