@@ -66,7 +66,7 @@ header {
     color: #ffcc70;
 }
 
-.hero {
+.banner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -80,26 +80,26 @@ header {
   padding-top: 150px;
 }
 
-.hero-text {
+.banner-text {
   flex: 1 1 50%;
   animation: slideInLeft 1.2s ease-out forwards;
   opacity: 0;
 }
 
-.hero-text h1 {
+.banner-text h1 {
   font-size: 2.8rem;
   color: #ffffff;
   margin-left: 5rem;
 }
 
-.hero-text p {
+.banner-text p {
   font-size: 1.2rem;
   margin-top: 0.8rem;
   margin-left: 5rem;
   color: white;
 }
 
-.hero-img {
+.banner-img {
   flex: 1 1 40%;
   text-align: center;
 }
@@ -153,7 +153,7 @@ h2 {
   padding-left: 10px;
 }
 
-.skills-heading h2 {
+.skills-text h2 {
   border-left: 5px solid #1f50e3;
   padding-left: 10px;
   font-size: 28px;
@@ -169,7 +169,7 @@ h2 {
   margin-top: 20px;
 }
 
-.skill-btn {
+.skill-b {
   padding: 15px 25px;
   font-size: 18px;
   font-weight: 600;
@@ -180,12 +180,12 @@ h2 {
   border-radius: 8px;
 }
 
-.skill-btn {
+.skill-b {
   border-color: rgb(10, 108, 188);
   color: rgb(10, 108, 188);
 }
 
-.skill-btn:hover {
+.skill-b:hover {
   background-color: rgb(10, 108, 188);
   color: white;
 }
@@ -203,7 +203,7 @@ h2 {
   transition: all 0.6s ease;
 }
 
-.visible {
+.appear {
   opacity: 1;
   transform: translateY(0);
 }
@@ -225,14 +225,14 @@ h2 {
     align-items: stretch;
 }
 
-.projects-section {
+.project-sec {
     display: flex;
     align-items: center; 
     justify-content: flex-start;
     gap:1%;
 }
 
-.projects-section2 {
+.project-sec2 {
     display: flex;
     align-items: center; 
     justify-content: flex-start;
@@ -240,7 +240,7 @@ h2 {
 }
 
 
-.projects-section .projects-grid {
+.project-sec .projects-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -248,7 +248,7 @@ h2 {
     margin-top: 7px;
 }
 
-.projects-section2 .projects-grid {
+.project-sec2 .projects-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -260,7 +260,7 @@ h2 {
     display: flex;
 }
 
-.project-card {
+.project-cd {
   background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
@@ -272,14 +272,14 @@ h2 {
   flex-direction: column;  
 }
 
-.project-card img {
+.project-cd img {
   width:100%;
   height: auto;
   object-fit: cover;
   align-items:center
 }
 
-.project-card2 {
+.project-cd2 {
   background-color: #ffffff;
   border-radius: 12px;
   overflow: hidden;
@@ -290,7 +290,7 @@ h2 {
   flex-direction: column;  
 }
 
-.project-card2 img {
+.project-cd2 img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -302,29 +302,29 @@ h2 {
   padding: 25px;
 }
 
-.project-info {
+.project-text {
   padding: 15px;
 }
 
-.project-info h3 {
+.project-text h3 {
   margin-bottom: 8px;
   color: #04045c;
 }
 
-.project-info p {
+.project-text p {
   margin-bottom: 6px;
   font-size: 0.95rem;
   color: #333;
 }
 
-.project-info a {
+.project-text a {
   color: #368de3;
   text-decoration: none;
   font-weight: bold;
   margin-right: 5px;
 }
 
-.project-card:hover {
+.project-cd:hover {
   transform: scale(1.02);
   box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
@@ -358,7 +358,7 @@ footer a:hover {
   transform: translateY(0);
 }
 
-.menu-toggle {
+.hamburger-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
@@ -368,7 +368,7 @@ footer a:hover {
   height: 18px;
 }
 
-.menu-toggle span {
+.hamburger-toggle span {
   height: 3px;
   width: 25px;
   background: white;
@@ -389,23 +389,23 @@ footer a:hover {
 
 /* Responsive */
 @media screen and (max-width: 1024px) {
-  .hero {
+  .banner {
     position: relative;
     min-height: auto;
     padding-top: 6rem;
   }
 
-  .hero-text h1 {
+  .banner-text h1 {
     font-size: 1.8rem;
     white-space: normal;
     margin-left: 10px;
   }
 
-  .hero-text p {
+  .banner-text p {
     margin-left: 10px;
   }
 
-  .hero-img {
+  .banner-img {
     margin-bottom: 1.5rem;
 
   }
@@ -415,7 +415,7 @@ footer a:hover {
     height: 150px;
   }
 
-  .menu-toggle {
+  .hamburger-toggle {
     display: flex;
   }
 
@@ -486,7 +486,7 @@ section {
     justify-content: center;
   }
 
-  .skill-btn {
+  .skill-b {
     width: 80%;
     text-align: center;
   }
@@ -496,11 +496,11 @@ section {
     align-items: flex-start;
   }
 
-  .project-card {
+  .project-cd {
     width: 100%;
   }
 
-  .project-card img {
+  .project-cd img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -509,7 +509,7 @@ section {
 .projects-grid {
         flex-wrap: wrap;
     }
-    .project-card2 {
+    .project-cd2 {
         flex: 0 0 100%;
         max-width: 100%;
     }
